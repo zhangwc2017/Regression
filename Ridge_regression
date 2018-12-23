@@ -28,7 +28,7 @@ for i in range(0,len(x_scaler)):
         x_scaler[i][j] = '%.4f'%(x_scaler[i][j])
 
 # sava preprocessed data to file
-np.savetxt("result/newdata2.csv", x_scaler, delimiter=",")
+np.savetxt("results/newdata2.csv", x_scaler, delimiter=",")
 
 # trans dataframe to numpy
 X = np.array(x_scaler, np.float64)
